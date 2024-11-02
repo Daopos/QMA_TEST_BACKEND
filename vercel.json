@@ -17,7 +17,7 @@
       "APP_ENV": "production",
       "APP_DEBUG": "true",
       "APP_URL": "https://qma-test-backend.vercel.app",
-      "APP_KEY": "base64:gnqILjFAJmk5DY6RrNzHd4/6r7/jrtImwxCwkDv3qCc=",
+      "APP_KEY": "base64:n3RHkzKc2ZnjVYyCCPmuVG9ff0a/nlZvXz5ATwQn8Y4=",
 
       "APP_CONFIG_CACHE": "/tmp/config.php",
       "APP_EVENTS_CACHE": "/tmp/events.php",
