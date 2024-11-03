@@ -1,28 +1,33 @@
 {
     "version": 2,
-      "framework": null,
+    "framework": null,
     "functions": {
-        "api/index.php": { "runtime": "vercel-php@0.6.0" }
+      "api/**/*.php": {
+        "memory": 3008,
+        "maxDuration": 10
+      }
     },
-    "routes": [{
+    "routes": [
+      {
         "src": "/(.*)",
-        "dest": "/api/index.php"
-    }],
+        "dest": "/public/index.php"
+      }
+    ],
     "env": {
-        "APP_ENV": "production",
-        "APP_DEBUG": "true",
-        "APP_URL": "https://qma-test-backend.vercel.app",
-        "APP_KEY": "base64:n3RHkzKc2ZnjVYyCCPmuVG9ff0a/nlZvXz5ATwQn8Y4=",
+      "APP_ENV": "production",
+      "APP_DEBUG": "true",
+      "APP_URL": "https://qma-test-backend.vercel.app",
+      "APP_KEY": "base64:n3RHkzKc2ZnjVYyCCPmuVG9ff0a/nlZvXz5ATwQn8Y4=",
 
-        "APP_CONFIG_CACHE": "/tmp/config.php",
-        "APP_EVENTS_CACHE": "/tmp/events.php",
-        "APP_PACKAGES_CACHE": "/tmp/packages.php",
-        "APP_ROUTES_CACHE": "/tmp/routes.php",
-        "APP_SERVICES_CACHE": "/tmp/services.php",
-        "VIEW_COMPILED_PATH": "/tmp",
+      "APP_CONFIG_CACHE": "/tmp/config.php",
+      "APP_EVENTS_CACHE": "/tmp/events.php",
+      "APP_PACKAGES_CACHE": "/tmp/packages.php",
+      "APP_ROUTES_CACHE": "/tmp/routes.php",
+      "APP_SERVICES_CACHE": "/tmp/services.php",
+      "VIEW_COMPILED_PATH": "/tmp",
 
-        "CACHE_DRIVER": "array",
-        "LOG_CHANNEL": "stderr",
-        "SESSION_DRIVER": "cookie"
+      "CACHE_DRIVER": "array",
+      "LOG_CHANNEL": "stderr",
+      "SESSION_DRIVER": "cookie"
     }
-}
+  }
