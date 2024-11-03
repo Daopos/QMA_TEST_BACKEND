@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('grade_fees', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->flloat('amount');
+            $table->float('amount');
             $table->string('gradetype')->nullable();
             $table->timestamps();
         });
